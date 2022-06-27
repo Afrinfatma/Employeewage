@@ -3,13 +3,17 @@ package com.bridgelabz.empwage;
 public class Empwage {
 	public static void main(String[] args){
 		int is_present=1;
+		int Wageperhr=20;
+		int empwage=0 , emphrs=0;
 		double emp_check= Math.floor( Math.random()*10)%2;	
 		 
 		if (emp_check==is_present)
-			System.out.println(" Employee is present");
+			emphrs=8;
+			
 		else
-			System.out.println("Employee is absent");
-				
+			emphrs=0;
+		empwage=Wageperhr*emphrs;
+		System.out.println("Employee wage:"+empwage);
 		}
 	}
 
