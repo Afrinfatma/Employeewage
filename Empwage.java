@@ -6,9 +6,8 @@ public class Empwage {
 	public static final int Wageperhr=20;
 	public static final int Num_of_working_days=20;
 	public static final int Num_of_working_hrs=100;
-	public static void main(String[] args){
-		
-		
+	
+		public static int computeWage() {		
 		int  emphrs=0 , Totalemphrs=0, Totalworkingdays=0;
 		while(Totalemphrs<=Num_of_working_hrs && Totalworkingdays<Num_of_working_days) {
 			Totalworkingdays++;
@@ -29,6 +28,10 @@ public class Empwage {
 		}
 		int Totalempwage= Totalemphrs * Wageperhr;
 		System.out.println("Total Employee Wage: " +Totalempwage);
+		return Totalempwage;
 	}
+		public static void main(String[] args){
+			computeWage();
+		}
 
 }
